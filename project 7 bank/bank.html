@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank Dashboard</title>
+  <link rel="stylesheet" href="bank.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo"></div>
+    <ul class="menu">
+      <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+      <li><a href="#"><i class="fas fa-user"></i><span>Profile</span></a></li>
+      <li><a href="#"><i class="fas fa-cog"></i><span>Settings</span></a></li>
+      <li class="logout"><a href="#"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <span>Welcome</span>
+        <h2>Banking Dashboard</h2>
+      </div>
+      <div class="user-info">
+        <div class="search-box">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="search" />
+        </div>
+        <img src="image/img1.avif" alt="user" />
+      </div>
+    </div>
+
+    <div class="card_container">
+      <h3 class="main_title">Account Overview</h3>
+      <div class="card_wrapper">
+        <div class="payment_card light_green">
+          <div class="card_header">
+            <div class="amount">
+              <span class="title">Current Balance</span>
+              <span class="amount_value" id="balanceDisplay">RS0.00</span>
+            </div>
+            <i style="width: 40px;" class="fas fa-wallet icon dark_green"></i>
+          </div>
+          <span class="card_detail">**** **** **** 9982</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 30px;">
+        <h3 class="main_title">Transaction</h3>
+        <input type="number" id="amountInput" placeholder="Enter amount" />
+        <button onclick="account.deposit()">Deposit</button>
+        <button onclick="account.withdraw()">Withdraw</button>
+        <div id="errorMsg"></div>
+      </div>
+    </div>
+
+    <div class="tabular_wrapper">
+      <h3 class="main_title">Transaction History</h3>
+      <div class="tabel_container">
+        <table id="transactionTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Balance</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script src="bank.js"></script>
+</body>
+
+</html>
