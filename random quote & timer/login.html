@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unique Random Quote Widget</title>
+
+  <!-- Google font -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"> -->
+   
+  <!-- Link the CSS file -->
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="page">
+    <div class="quote-app" aria-live="polite">
+      <div class="decor-top"></div>
+
+      <article class="card" id="quoteCard">
+        <svg class="big-quote" viewBox="0 0 32 32" aria-hidden="true">
+          <!-- <path d="M10 12c0-3 2-6 6-6v4c-1 0-2 .8-2 2s.9 2 2 2v6c-3 0-6-2.7-6-8zM2 12c0-3 2-6 6-6v4c-1 0-2 .8-2 2s.9 2 2 2v6c-3 0-6-2.7-6-8z"></path> -->
+        </svg>
+
+        <p class="quote-text" id="quoteText">Loading inspirational words…</p>
+        <p class="quote-author" id="quoteAuthor"></p>
+
+        <div class="controls">
+          <button id="newQuote" class="btn primary" title="New quote">New Quote</button>
+          <div class="small-actions">
+           <a href="quote.html"> <button id="copyBtn" class="btn icon" title="Copy quote">🔑</button></a>
+            <button id="tweetBtn" class="btn icon" title="Tweet quote">🐦</button>
+            <button id="likeBtn" class="btn icon" title="Save (local)">❤</button>
+          </div>
+        </div>
+
+        <div class="saved-area" id="savedArea" aria-hidden="true">
+          <small>Saved locally</small>
+          <ul id="savedList"></ul>
+        </div>
+      </article>
+
+      <div class="decor-bottom"></div>
+    </div>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>

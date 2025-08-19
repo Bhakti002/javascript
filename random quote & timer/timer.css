@@ -1,0 +1,89 @@
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .timer-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      width: 360px;
+      max-width: 90%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      color: #f1f1f1;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    .time-display {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #00ffcc;
+      background: rgba(0,0,0,0.4);
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: inset 0 3px 6px rgba(0,0,0,0.5);
+    }
+
+    .inputs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .inputs input {
+      width: 70px;
+      padding: 8px;
+      font-size: 1rem;
+      text-align: center;
+      border: 2px solid rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      outline: none;
+      color: #fff;
+    }
+
+    .inputs input::-webkit-inner-spin-button {
+      display: none;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    button {
+      flex: 1;
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .start { background: #00bcd4; color: #fff; }
+    .pause { background: #ff9800; color: #fff; }
+    .resume { background: #4caf50; color: #fff; }
+    .reset { background: #f44336; color: #fff; }
+
+    button:hover { opacity: 0.85; transform: scale(1.05); }
+    button:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
