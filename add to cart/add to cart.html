@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Cart with Popup</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="add_to_cart.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">MyShop</div>
+    <div class="cart-icon" onclick="toggleCart()">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <div class="parent">
+    <div class="product">
+      <img src="imahe/bag.webp" alt="">
+      <h2>Leather Bag</h2>
+      <h3>Rs299.00</h3>
+      <div class="btn" onclick="add_to_cart('Dry Fruits',299,'imahe/bag.webp')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/boys_tshirt.webp" alt="">
+      <h2>boys T-shirt</h2>
+      <h3>Rs299.00</h3>
+      <div class="btn" onclick="add_to_cart('Pickle',299,'imahe/boys_tshirt.webp')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/kurti_women.webp" alt="">
+      <h2>Kurti </h2>
+      <h3>Rs1299.00</h3>
+      <div class="btn" onclick="add_to_cart('Vegetables',1299,'imahe/kurti_women.webp')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/man_watch.png" alt="">
+      <h2>Mans Watch</h2>
+      <h3>Rs3999.00</h3>
+      <div class="btn" onclick="add_to_cart('Dry Fruits',3999,'imahe/man_watch.png')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/shoes.png" alt="">
+      <h2>Shoes</h2>
+      <h3>Rs3000.00</h3>
+      <div class="btn" onclick="add_to_cart('Dry Fruits',3000.00,'imahe/shoes.png')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/skirts.webp" alt="">
+      <h2>Women skirts</h2>
+      <h3>Rs348.00</h3>
+      <div class="btn" onclick="add_to_cart('Dry Fruits',348,'imahe/skirts.webp')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/table_lamp.avif" alt="">
+      <h2>Table Lamp</h2>
+      <h3>Rs1649.00</h3>
+      <div class="btn" onclick="add_to_cart('Dry Fruits',1649,'imahe/table_lamp.avif')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/teddy.webp" alt="">
+      <h2>Teddy Daddy</h2>
+      <h3>Rs299.00</h3>
+      <div class="btn" onclick="add_to_cart('Dry Fruits',299,'imahe/teddy.webp')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/watch.jpg" alt="">
+      <h2>Watch</h2>
+      <h3>Rs3500.00</h3>
+      <div class="btn" onclick="add_to_cart('Dry Fruits',3500,'imahe/watch.jpg')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/lays.png" alt="">
+      <h2>Lays</h2>
+      <h3>Rs10.00</h3>
+      <div class="btn" onclick="add_to_cart('Dry Fruits',10,'imahe/lays.png')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/vegetables.jpeg" alt="">
+      <h2>vegetables</h2>
+      <h3>Rs500.00</h3>
+      <div class="btn" onclick="add_to_cart('Dry Fruits',500,'imahe/vegetables.jpeg')">Add to Cart</div>
+    </div>
+    <div class="product">
+      <img src="imahe/dryfruits.jpg" alt="">
+      <h2>Dry Fruits</h2>
+      <h3>Rs800.00</h3>
+      <div class="btn" onclick="add_to_cart('Dry Fruits',800,'imahe/dryfruits.jpg')">Add to Cart</div>
+    </div>
+    
+  </div>
+
+  <!-- Cart Popup -->
+  <div class="cart-popup" id="cartPopup">
+    <button class="close-btn" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+    <h2>Your Cart</h2>
+    <ul class="cartItem"></ul>
+    <p class="cart-total">Total: Rs<span id="total">0</span></p>
+  </div>
+
+
+  <script src="add_to_cart.js"></script>
+</body>
+</html>
