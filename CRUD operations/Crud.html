@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Manager</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD OPERATIONS</h1>
+
+    <!-- Product Form -->
+    <form id="product-form">
+      <input type="file">
+      <input type="text" id="product-name" placeholder="Product Name" required />
+      <input type="number" id="product-price" placeholder="Price" required />
+      <button type="submit">Add Product</button>
+    </form>
+
+    <div class="cardd">
+      <div class="card1">
+        <img src="images/dress.jpg" alt="">
+        <h3>Women Dress</h3>
+        <h5>399/-</h5>
+        <button>Add to card</button>
+        <div id="cardContainer"></div>
+      </div>
+
+      <div class="card1">
+        <img src="images/women tshirt.avif" alt="">
+        <h3>Women T-shirt</h3>
+        <h5>299/-</h5>
+        <button>Add to card</button>
+        <div id="cardContainer"></div>
+      </div>
+
+      <div class="card1">
+        <img src="images/jeans.avif" alt="">
+        <h3>Cargo Jeans</h3>
+        <h5>1,270/-</h5>
+        <button>Add to card</button>
+        <div id="cardContainer"></div>
+      </div>
+
+      <div class="card1">
+        <img src="images/Co-ord set.webp" alt="">
+        <h3>Co-ord set Silk</h3>
+        <h5>1,250/-</h5>
+        <button>Add to card</button>
+        <div id="cardContainer"></div>
+      </div>
+
+      <div class="card1">
+        <img src="images/cocktail.jpg" alt="">
+        <h3>Cocktail Wedding Dress</h3>
+        <h5>800/-</h5>
+        <button>Add to card</button>
+        <div id="cardContainer"></div>
+      </div>
+
+      <div class="card1">
+        <img src="images/choli.webp" alt="">
+        <h3>Chaniya Chili</h3>
+        <h5>3,000/-</h5>
+        <button>Add to card</button>
+        <div id="cardContainer"></div>
+      </div>
+
+      <div class="card1">
+        <img src="images/kurti.webp" alt="">
+        <h3>Kurti set</h3>
+        <h5>450/-</h5>
+        <button>Add to card</button>
+        <div id="cardContainer"></div>
+      </div>
+
+      <div class="card1">
+        <img src="images/party wear.avif" alt="">
+        <h3>Short Party Wear</h3>
+        <h5>999/-</h5>
+        <button>Add to card</button>
+        <div id="cardContainer"></div>
+      </div>
+
+    </div>
+
+    <!-- Product Cards -->
+    <ul id="product-list"></ul>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
