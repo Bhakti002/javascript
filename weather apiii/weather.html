@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+
+    <!-- Search Page -->
+    <div id="searchPage">
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i></button>
+      </div>
+      <div class="error" id="error"></div>
+    </div>
+
+    <!-- Weather Page -->
+    <div class="weather" id="weatherPage">
+      <div class="icon-box">
+        <img id="icon" alt="Weather Icon">
+      </div>
+      <div class="temp" id="temp">--°C</div>
+      <div class="desc" id="desc">---</div>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>Humidity</h3>
+          <p id="humidity">--%</p>
+        </div>
+        <div class="info-box">
+          <h3>Wind</h3>
+          <p id="wind">-- m/s</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+
+</html>
